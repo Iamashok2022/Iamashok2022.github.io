@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<title>AOHO-LOGIN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/Logincss.css">
+</head>
+<body>
+<header>
+  <div class="logo"><a href="Aoho.html"><h2>AOHO</h2></a></div>
+  <div class="menu">
+    <ul>
+      <li><a href="Aoho.html">Home</a>
+      
+      </li>      
+      <li><a href="About.html">About</a>
+      </li>
+      <li><a href="#">Service</a>
+      <div class="sub-menu">
+          <ul>
+            <li><a href="Sport.html">Sport</li>
+             <li><a href="Book.html">Book</a></li>
+            <li><a href="Bake.html">Bake</a></li>
+          </ul>
+       </div> 
+      </li>
+      <li><a href="Login.html">Login</a></li>
+     </ul></div>
+</header>
+<div class="winlogin">
+    <div class="login">
+      <img src="images/marketing.jpg">
+    </div>
+    <div class="gimg">
+     <div class="txt" id="ll">
+        <div class="htwo">
+         <h2>LOGIN</h2>
+        </div>
+        <div class="form">
+            <form id="login" onsubmit="sublog()">
+              <input type="text" id="f1" class="input-field" placeholder="NAME" required/>
+              <input type="text" id="pa" class="input-field" placeholder="PASSWORD" required/><br><br>
+              <button type="submit" id="submit" value="login" onsubmit="subm()">LOGIN</button>
+            </form>
+        </div>
+         <a href="#" onclick="reg()">REGISTER</a>
+      </div>
+        <div class="txt" id="ss">
+           <div class="htwo">
+               <h2>REGISTER</h2>
+            </div>
+          <div class="form">
+              <form id="Register" onsubmit="subreg()">
+                  <input type="text" id="f1" class="input-field" placeholder="FIRST NAME" required/>
+                  <input type="text" id="ln" class="input-field" placeholder="LAST NAME" required/>
+                  <input type="email" id="em" class="input-field" placeholder="EMAIL" required/>
+                  <input type="text" id="pa" class="input-field" placeholder="PASSWORD" required/><br><br>
+                  <button type="submit" id="submit1" value="REGISTER">REGISTER</button>
+              </form>
+         </div>
+            <a href="#" onclick="log()">LOGIN</a>
+        </div>
+</div>
+<script src="javascript/Loginjs.js">
+ </script>
+
+</body>
+</html>

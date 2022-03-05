@@ -145,10 +145,10 @@ header .menu ul li:hover {
 }
 .content {
    position:relative;
-  top:140px;
+  top:110px;
   left:20px;
   width:97%;
-  height:650px;
+  height:520px;
   background:rgba(255,255,255,0.2);
   box-shadow:0 4px 16px rgba(0,0,0,0.5);
   backdrop-filter:blur(10px);
@@ -158,10 +158,10 @@ header .menu ul li:hover {
 .firsttext{
   position:absolute;
   top:30%;
-   left:200px;
+   left:100px;
   text-align:center;
  font-size:40px;
- font-weight:900;
+ font-weight:700;
  text-transform:uppercase;
  letter-spacing:4px;
  line-height:60px;
@@ -171,7 +171,7 @@ header .menu ul li:hover {
 .secondtext{
   position:absolute;
   top:45%;
-   left:320px;
+   left:280px;
  text-align:center;
  font-size:2em;
  font-weight:500;

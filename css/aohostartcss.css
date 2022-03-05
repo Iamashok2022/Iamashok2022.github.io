@@ -27,7 +27,7 @@ header .logo a{
   }
 header .logo h2 {
   letter-spacing:2px;
-  font-size:2.5em; 
+  font-size:2em; 
   font-weight:500;
   color:white;
   cursor:pointer;
@@ -47,7 +47,7 @@ header .menu ul {
 header .menu ul li {
   position:relative;
   padding:10px 15px;
-  font-size:25px;
+  font-size:20px;
   font-weight:light;
   width:100%;
   }

@@ -15,7 +15,18 @@ function openfullscreen() {
        y.requestFullscreen();
   }
 }
-
+var y=document.getElementById('i2');
+function openfullscreen() {
+       if(y.requestFullscreen) {
+       y.requestFullscreen();
+  }
+}
+var y=document.getElementById('i3');
+function openfullscreen() {
+       if(y.requestFullscreen) {
+       y.requestFullscreen();
+  }
+}
 var z=document.getElementById('map1');
    function openfullscreen1() {
    if(z.requestFullscreen) {

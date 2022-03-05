@@ -1,28 +1,23 @@
 * {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-body {
-  margin:0;
-}
-header {
- font-family:sans-serif;
- position:relative;
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+  }
+ header {
+  position:fixed;
  width:100%;
  height:15vh;
  display:flex;
  justify-content:space-between;
  align-items:center;
- background:blue;
+  background:linear-gradient(45deg,blue,red);
  box-shadow:0 12px 20px rgba(0,0,0,0.12);
-  cursor:pointer;
+ z-index:1;
+ font-family:sans-serif;
+ cursor:pointer;
   }
-header:hover {
- background:linear-gradient(45deg,blue,red);
-}
 header .logo {
-  margin-left:70px;
+  margin-left:70px; 
   }
 header .logo a{
   text-decoration:none; 
@@ -32,13 +27,9 @@ header .logo h2 {
   font-size:2em; 
   font-weight:500;
   color:white;
-}
+  cursor:pointer;
+ }
 header .menu {
-  position:absolute;
-  top:0;
-  right:0;
-  margin-top:40px;
-  display:flex;
   margin-right:80px;
   width:30%;
  }
@@ -46,7 +37,7 @@ header .menu ul {
   position:relative;
   list-style:none;
   display:flex;
-  justify-content:space-around
+  justify-content:space-around;
   align-items:center;
   width:100%;
 }
@@ -102,26 +93,32 @@ header .menu ul li:hover {
  background:navy;
  border-radius:0;
 }
-.sub-menu2 {
- display:none;
-}
-.sub-menu2 ul li a {
-  text-decoration:none;
-}
-.hor:hover .sub-menu2 {
- display:block;
-   position:absolute;
-  background:blue;
-  box-shadow:0 12px 20px rgba(0,0,0,0.12);
-  marign-top:-20px;
-  margin-left:130px;
-  width:150px;
-  height:130px; 
-   border-radius:10px;
-}
-.winlogin {
- position:absolute;
- top:20%;
+@media screen and (max-width:600px) {
+  header {
+   flex-direction:column;
+   height:100px;
+  }
+  header .menu ,header .logo {
+    width:100%;
+    float:none;
+    margin:0;
+  }
+  header .logo {
+     text-align:center;
+     line-height:40px;
+   }
+ }
+@media screen and (max-width:960px) {
+  header {
+   flex-direction:column;
+   height:auto;
+  }
+
+ }
+.winlogin{
+  position:absolute;
+ top:0%;
+  margin-top:10%;
  left:20%;
  width:50%;
  height:60%;
@@ -129,17 +126,6 @@ header .menu ul li:hover {
  z-index:-1;
  overflow:hidden;
 }
-.winlogin::before {
-  content:'';
-  position:absolute;
-  bottom:-40;
-  right:0;
-   width:500px;
- height:500px;
-  background:linear-gradient(blue 50%,navy);
-  clip-path:circle(20% at right 80%);
-}
-
 body::before {
   content:'';
   position:absolute;
@@ -149,24 +135,23 @@ body::before {
  height:500px;
   background:linear-gradient(blue 50%,navy);
   clip-path:circle(50% at right 80%);
+  z-index:-1;
 }
 .login{
-width:60%;
-height:100%;
-float:left;
- display:block;
- transition:0.5s;
+  width:60%;
+  height:100%;
+   float:left;
 }
-.login img {
- width:100%;
- height:100%;
- object-fit:center;
+.login img{
+  width:100%;
+  min-height:100%;
+  object-fit:center;
 }
 .gimg{
-float:left;
-width:40%;
-background:gold;
-height:100%;
+  width:40%;
+  height:100%;
+  float:left;
+  background:gold;
 }
 .txt {
  padding:70px 36px;
@@ -216,4 +201,34 @@ outline:none;
 }
 #ss{
 display:none;
+}
+@media screen and (max-width:600px) {
+  .login,.gimg{
+    width:100%;
+    float:left;
+  }
+  .winlogin{
+ margin-top:21%;
+ left:0%;
+ width:100%;
+ height:auto;
+ box-shadow:0 8px 5px rgba(0,0,0,0.4);
+ z-index:-1;
+ overflow:hidden;
+  }
+}
+@media screen and (max-width:960px) {
+  .login,.gimg{
+    width:100%;
+    float:left;
+  }
+  .winlogin{
+  margin-top:21%;
+ left:0%;
+ width:100%;
+ height:auto;
+ box-shadow:0 8px 5px rgba(0,0,0,0.4);
+ z-index:-1;
+ overflow:hidden;
+  }
 }

@@ -2,8 +2,7 @@ const ll=document.getElementById('ll');
  const ss=document.getElementById('ss');
  function reg() {
  ss.style.display="block";
- ss.style.top="0px";
- ss.style.position="absolute";
+
  ll.style.display="none";
 }
  function log() {

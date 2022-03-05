@@ -282,6 +282,18 @@ opacity:0;
       height:auto;
     }
 }
+@media screen and (max-width:390px) {
+    .bor2{
+     height:50vh;
+    }
+    .ee {
+       height:65vh;
+   }
+   .scrolldown{
+       bottom:-20px;
+       left:49%;
+    }
+}
 .clap2{
 position:relative;
 width:100%;

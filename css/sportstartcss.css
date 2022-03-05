@@ -219,7 +219,7 @@ header .menu ul li:hover {
    padding-top:0px;
   }
  .hero-text p{
-  padding-top:80px;
+  padding-top:90px;
  line-height:25px;
  font-size:17px;
  letter-spacing:2px;
@@ -260,15 +260,15 @@ header .menu ul li:hover {
    margin:0px;
   }
  .hero-text p{ 
-  padding-top:100px;
+  padding-top:120px;
 }
-  .hero-text .play-btn{
+ .hero-text .play-btn{
  margin-top:-50px;
  margin-left:90px;
  width:50px;
 }
 .rr{
-   margin-top:-140px;
+   margin-top:-165px;
    margin-left:0px;
  }
 .trailer{
